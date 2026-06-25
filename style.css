@@ -191,12 +191,25 @@ header {
 }
 
 .name {
-    font-size: 5rem;
-    color: #fff;
+    font-size: 6rem;
+    font-weight: 900;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #fff, #94a3b8);
+    background: linear-gradient(270deg, #00f2fe, #4facfe, #8b5cf6, #3b82f6);
+    background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientFlow 8s ease infinite, glowPulse 2s alternate infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glowPulse {
+    0% { filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3)); }
+    100% { filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.8)); }
 }
 
 .title {
@@ -279,8 +292,8 @@ header {
 
 .skill-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 40px rgba(59, 130, 246, 0.4);
+    border-color: rgba(59, 130, 246, 1);
 }
 
 .skill-icon {
