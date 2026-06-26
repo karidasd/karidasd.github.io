@@ -1,18 +1,73 @@
-# Dimitris Karydas - Personal Portfolio
+<h1 align="center">Hi there, I'm Dimitris Karydas 👋</h1>
 
-Welcome to the repository for my personal portfolio website, hosted on GitHub Pages.
+<p align="center">
+  <em>PhD Candidate | AI & Data Science Instructor | Machine Learning Engineer</em>
+</p>
 
-## 🌐 Live Website
-**[https://karidasd.github.io/](https://karidasd.github.io/)**
-
-## 🛠️ Built With
-- **HTML5 & CSS3:** Semantic markup and modern, responsive styling (Flexbox/Grid, Glassmorphism).
-- **Vanilla JavaScript:** Custom animations, smooth scrolling, and dynamic typing effects without heavy frameworks.
-- **FontAwesome:** Scalable vector icons.
-
-## 📅 Contact & Meetings
-You can schedule a meeting or technical interview with me via Calendly:
-**[Schedule a Call](https://calendly.com/karidasdimitris23)**
+<p align="center">
+  <a href="https://karidasd.github.io/">
+    <img src="https://img.shields.io/badge/Website-Live_Portfolio-success?style=for-the-badge&logo=google-chrome" alt="Portfolio Website" />
+  </a>
+  <a href="https://calendly.com/karidasdimitris23">
+    <img src="https://img.shields.io/badge/Calendly-Schedule_Call-blue?style=for-the-badge&logo=calendly" alt="Calendly" />
+  </a>
+</p>
 
 ---
-*Designed and built by Dimitris Karydas.*
+
+## 🧠 About Me
+
+I bridge the gap between academic research and industry-grade AI solutions. My work focuses on building advanced Machine Learning models, engineering Agentic AI workflows, and designing robust Data Analytics pipelines.
+
+* 🔭 **Currently working on:** Autonomous Agentic AI Systems & Advanced RAG Pipelines.
+* 🌱 **Currently exploring:** Advanced LLM Prompt Engineering, Vector Databases (ChromaDB), and Real-time Big Data Streaming.
+* 💬 **Ask me about:** Deep Learning architectures, PyTorch, Data Engineering, or how to pass a grueling technical interview.
+* 📫 **Reach me at:** [Schedule a Meeting via Calendly](https://calendly.com/karidasdimitris23)
+
+---
+
+## 🛠️ Tech Stack & Arsenal
+
+### **Languages & Core**
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![SQL](https://img.shields.io/badge/sql-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
+
+### **Machine Learning & AI**
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991.svg?style=for-the-badge&logo=OpenAI&logoColor=white)
+
+### **Data Engineering & BI**
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+
+---
+
+## 🚀 Featured Projects
+
+Here are some of the open-source projects I'm most proud of:
+
+1. **[Tech-Interview-Cheatsheets](https://github.com/karidasd/Tech-interview-cheatsheets):** The "Gold Edition". Over 300+ Machiavellian edge-case interview questions for Senior AI and Data Roles.
+2. **[Agentic-BI](https://github.com/karidasd/Agentic-BI):** Autonomous Power BI semantic model builder and custom HTML KPI cards for HR Analytics, powered by Agentic AI.
+3. **[AI Job Radar](https://github.com/karidasd/ai-data-science-jobs):** A serverless web scraper that finds 300+ remote AI jobs daily, extracting hidden salaries using NLP.
+4. **[Claude Intelligence Suite](https://github.com/karidasd/Claude-Intelligence-Suite):** An advanced framework for mastering Agentic AI workflows using Claude.
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=karidasd&show_icons=true&theme=tokyonight" alt="GitHub Stats" width="48%">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=karidasd&layout=compact&theme=tokyonight" alt="Top Languages" width="48%">
+</p>
+
+---
+
+<p align="center">
+  <i>"The algorithm proves mathematically that short-term optimization will cause long-term bankruptcy."</i><br>
+  Let's connect and build something amazing together!
+</p>
