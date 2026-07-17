@@ -3,8 +3,9 @@ const typedTextSpan = document.getElementById("typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
-    "PhD Candidate.", 
-    "AI & Data Science Instructor.", 
+    "AI Agent Architect.",
+    "Data Scientist.",
+    "PhD Candidate & Instructor.",
     "Machine Learning Engineer."
 ];
 const typingDelay = 100;
