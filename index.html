@@ -33,18 +33,36 @@
     <main>
         <!-- HERO SECTION -->
         <section id="hero" class="hero">
-            <div class="hero-content">
-                <p class="greeting">Hello World, my name is</p>
-                <h1 class="name">Karydas Dimitris</h1>
-                <h2 class="title type-wrap">
-                    <span id="typed-text"></span><span class="cursor">|</span>
-                </h2>
-                <p class="description">
-                    I build advanced Machine Learning models, engineer Agentic AI workflows, and design robust Data Analytics pipelines. Bridging the gap between academic research and industry-grade solutions. Because some of the brightest ideas are born in the DarkAIs.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="https://github.com/karidasd" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub Profile</a>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="greeting">Hello World, my name is</p>
+                    <h1 class="name">Karydas Dimitris</h1>
+                    <h2 class="title type-wrap">
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="description">
+                        I build advanced Machine Learning models, engineer Agentic AI workflows, and design robust Data Analytics pipelines. Bridging the gap between academic research and industry-grade solutions. Because some of the brightest ideas are born in the DarkAIs.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="https://github.com/karidasd" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub Profile</a>
+                    </div>
+                </div>
+                <div class="hero-terminal glass-card">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">darkais_agent.py</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <span class="t-green">visitor@darkais:~$</span> python run_agent.py<br>
+                        <span class="t-blue">[INFO]</span> Initializing DarkAIs Orchestrator...<br>
+                        <span class="t-blue">[INFO]</span> Memory patterns loaded.<br>
+                        <span class="t-yellow">[AGENTS]</span> Spawning Researcher, Critic, Writer...<br>
+                        <span class="t-green">[SUCCESS]</span> Agent Loop stabilized. Ready.<br>
+                        <span class="t-green">visitor@darkais:~$</span> <span class="blink-cursor">_</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,6 +113,37 @@
                         <span class="badge">Docker</span>
                         <span class="badge">REST APIs</span>
                         <span class="badge">Serverless</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GITHUB STATUS DASHBOARD -->
+        <section id="github-dashboard" class="github-dashboard section">
+            <h2 class="section-title">Live GitHub <span>Activity</span></h2>
+            <div class="github-grid">
+                <div class="github-card glass-card">
+                    <h3><i class="fas fa-history"></i> Latest Activity</h3>
+                    <div class="activity-feed" id="activity-feed">
+                        <div class="activity-item skeleton-line"></div>
+                        <div class="activity-item skeleton-line"></div>
+                    </div>
+                </div>
+                <div class="github-card stats-card glass-card">
+                    <h3><i class="fas fa-chart-line"></i> Repository Stats</h3>
+                    <div class="stats-container">
+                        <div class="stat-box">
+                            <span class="stat-number" id="github-repos">-</span>
+                            <span class="stat-label">Public Repos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" id="github-followers">-</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" id="github-stars">-</span>
+                            <span class="stat-label">Total Stars</span>
+                        </div>
                     </div>
                 </div>
             </div>
