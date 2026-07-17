@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Karydas Dimitris</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 10%;
+        }
+        .contact-form-card {
+            width: 100%;
+            max-width: 550px;
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            transition: all 0.3s ease;
+        }
+        .contact-form-card:hover {
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.15), 0 0 25px rgba(139, 92, 246, 0.15);
+            background: linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
+                        linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) border-box;
+            border: 1px solid transparent;
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .form-header p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-family: var(--font-mono);
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: #fff;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--accent-primary);
+            background: transparent;
+            color: var(--accent-primary);
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-submit:hover {
+            background: rgba(59, 130, 246, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 25px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: var(--accent-primary);
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        .success-message i {
+            font-size: 3rem;
+            color: #10b981;
+            margin-bottom: 15px;
+        }
+        .success-message h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .success-message p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animated Particles / Gradients -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+    <div class="grid-overlay"></div>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">DK<span class="dot">.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-form-card">
+            
+            <div id="form-container">
+                <div class="form-header">
+                    <h1>Send a Message</h1>
+                    <p>Your email stays completely private and secure.</p>
+                </div>
+                
+                <!-- Web3Forms Form -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    
+                    <!-- Email Form Metadata -->
+                    <input type="hidden" name="from_name" value="Karydas Dimitris Portfolio">
+                    <input type="hidden" name="subject" value="New message from portfolio visitor">
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" class="form-control" placeholder="Hello Dimitris..." required></textarea>
+                    </div>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Success State -->
+            <div id="success-state" class="success-message">
+                <i class="far fa-check-circle"></i>
+                <h2>Message Sent!</h2>
+                <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to portfolio</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Karydas</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const formContainer = document.getElementById('form-container');
+        const successState = document.getElementById('success-state');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            // Display loading on button
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = "Sending...";
+            btn.disabled = true;
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    formContainer.style.display = "none";
+                    successState.style.display = "block";
+                } else {
+                    console.log(response);
+                    alert(json.message || "Something went wrong!");
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                alert("Form submission failed. Please try again.");
+                btn.textContent = originalText;
+                btn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
