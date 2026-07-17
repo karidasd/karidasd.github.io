@@ -11,18 +11,21 @@
   <a href="https://calendly.com/karidasdimitris23">
     <img src="https://img.shields.io/badge/Calendly-Schedule_Call-blue?style=for-the-badge&logo=calendly" alt="Calendly" />
   </a>
+  <a href="https://karidasd.github.io/contact.html">
+    <img src="https://img.shields.io/badge/Contact-Send_Message-10B981?style=for-the-badge&logo=maildotru" alt="Send Message" />
+  </a>
 </p>
 
 ---
 
 ## 🧠 About Me
 
-I bridge the gap between academic research and industry-grade AI solutions. My work focuses on building advanced Machine Learning models, engineering Agentic AI workflows, and designing robust Data Analytics pipelines.
+I bridge the gap between academic research and industry-grade AI solutions. My work focuses on building advanced Machine Learning models, engineering Agentic AI workflows, and designing robust Data Analytics pipelines. Because some of the brightest ideas are born in the DarkAIs.
 
-* 🔭 **Currently working on:** Autonomous Agentic AI Systems & Advanced RAG Pipelines.
-* 🌱 **Currently exploring:** Advanced LLM Prompt Engineering, Vector Databases (ChromaDB), and Real-time Big Data Streaming.
-* 💬 **Ask me about:** Deep Learning architectures, PyTorch, Data Engineering, or how to pass a grueling technical interview.
-* 📫 **Reach me at:** [Schedule a Meeting via Calendly](https://calendly.com/karidasdimitris23)
+* 🔭 **Currently working on:** Autonomous Agentic AI Systems & Self-Correcting LLM Loops.
+* 🌱 **Currently exploring:** Advanced LLM Prompt Loops, MLOps orchestration, and xG Poisson models.
+* 💬 **Ask me about:** AI Agent loops, static code analysis, or how to pass a grueling technical interview.
+* 📫 **Reach me at:** [Send a secure message](https://karidasd.github.io/contact.html) or [Schedule a Meeting via Calendly](https://calendly.com/karidasdimitris23)
 
 ---
 
@@ -51,10 +54,12 @@ I bridge the gap between academic research and industry-grade AI solutions. My w
 
 Here are some of the open-source projects I'm most proud of:
 
-1. **[Tech-Interview-Cheatsheets](https://github.com/karidasd/Tech-interview-cheatsheets):** The "Gold Edition". Over 300+ Machiavellian edge-case interview questions for Senior AI and Data Roles.
-2. **[Agentic-BI](https://github.com/karidasd/Agentic-BI):** Autonomous Power BI semantic model builder and custom HTML KPI cards for HR Analytics, powered by Agentic AI.
-3. **[AI Job Radar](https://github.com/karidasd/ai-data-science-jobs):** A serverless web scraper that finds 300+ remote AI jobs daily, extracting hidden salaries using NLP.
-4. **[Claude Intelligence Suite](https://github.com/karidasd/Claude-Intelligence-Suite):** An advanced framework for mastering Agentic AI workflows using Claude.
+1. **[prompt-to-loop-engineering](https://github.com/karidasd/prompt-to-loop-engineering):** The complete 7-level progression from zero-shot prompting to self-correcting agentic loops.
+2. **[over-under-predictions](https://github.com/karidasd/over-under-predictions):** An automated Poisson-based daily football prediction betting engine.
+3. **[remote-work-tools-2026](https://github.com/karidasd/remote-work-tools-2026):** A brutal, opinionated analysis of how 19 remote work tools transformed in 2026.
+4. **[technical-debt-analyzer](https://github.com/karidasd/technical-debt-analyzer):** A static AST code-complexity and duplication analysis CLI.
+5. **[Agentic-BI](https://github.com/karidasd/Agentic-BI):** Autonomous Power BI semantic model builder, powered by Agentic AI.
+6. **[AI Job Radar](https://github.com/karidasd/ai-data-science-jobs):** A serverless scraper extracting hidden remote AI job salaries.
 
 ---
 
