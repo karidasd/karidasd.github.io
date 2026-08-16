@@ -715,4 +715,62 @@ footer {
     }
 }
 
+/* =========================================
+   STAR BUTTONS & FLOATING CTA
+========================================= */
+.star-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    background: rgba(255, 184, 0, 0.08);
+    border: 1px solid rgba(255, 184, 0, 0.4);
+    color: #FFB800;
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+.star-cta-btn:hover {
+    background: rgba(255, 184, 0, 0.2);
+    border-color: #FFB800;
+    box-shadow: 0 0 12px rgba(255, 184, 0, 0.3);
+    transform: translateY(-1px);
+    color: #FFF;
+}
+
+.floating-star-badge {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #121722;
+    border: 1px solid #FFB800;
+    padding: 10px 18px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 184, 0, 0.25);
+    color: #F0F4F8;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    animation: pulseStar 3s infinite;
+}
+.floating-star-badge:hover {
+    background: #FFB800;
+    color: #05070A;
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 15px 35px rgba(255, 184, 0, 0.4);
+}
+@keyframes pulseStar {
+    0%, 100% { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 184, 0, 0.2); }
+    50% { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 184, 0, 0.45); }
+}
+
 
