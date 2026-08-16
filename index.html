@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimitris Karydas | AI & Data Science Portfolio</title>
+    <title>Dimitris Karydas | AI, Quantitative Finance & Data Science Portfolio</title>
     <!-- Google Fonts: Inter & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -25,6 +25,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="https://karidasd.github.io/algo-trading-academy/" target="_blank" style="color:#00F0FF;"><i class="fas fa-graduation-cap"></i> Academy</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -41,10 +42,11 @@
                         <span id="typed-text"></span><span class="cursor">|</span>
                     </h2>
                     <p class="description">
-                        I build advanced Machine Learning models, engineer Agentic AI workflows, and design robust Data Analytics pipelines. Bridging the gap between academic research and industry-grade solutions. Because some of the brightest ideas are born in the DarkAIs.
+                        I build advanced Machine Learning models, engineer Agentic AI workflows, and architect quantitative trading algorithms. Bridging the gap between academic research and production-grade software. Because some of the brightest ideas are born in the DarkAIs.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#projects" class="btn btn-primary">View Featured Work</a>
+                        <a href="https://karidasd.github.io/algo-trading-academy/" target="_blank" class="btn btn-secondary" style="border-color:#00F0FF; color:#00F0FF;"><i class="fas fa-chart-line"></i> Algo Trading Academy</a>
                         <a href="https://github.com/karidasd" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub Profile</a>
                     </div>
                 </div>
@@ -53,14 +55,14 @@
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
-                        <span class="terminal-title">darkais_agent.py</span>
+                        <span class="terminal-title">darkais_orchestrator.py</span>
                     </div>
                     <div class="terminal-body" id="terminal-body">
-                        <span class="t-green">visitor@darkais:~$</span> python run_agent.py<br>
-                        <span class="t-blue">[INFO]</span> Initializing DarkAIs Orchestrator...<br>
-                        <span class="t-blue">[INFO]</span> Memory patterns loaded.<br>
-                        <span class="t-yellow">[AGENTS]</span> Spawning Researcher, Critic, Writer...<br>
-                        <span class="t-green">[SUCCESS]</span> Agent Loop stabilized. Ready.<br>
+                        <span class="t-green">visitor@darkais:~$</span> python run_orchestrator.py<br>
+                        <span class="t-blue">[INFO]</span> Initializing DarkAIs Quant & AI Systems...<br>
+                        <span class="t-blue">[INFO]</span> Connecting to Solana RPC & Broker WebSockets...<br>
+                        <span class="t-yellow">[AGENTS]</span> Spawning Algo Academy, Solana Sniper, Agentic-BI...<br>
+                        <span class="t-green">[SUCCESS]</span> All systems operational. Ready.<br>
                         <span class="t-green">visitor@darkais:~$</span> <span class="blink-cursor">_</span>
                     </div>
                 </div>
@@ -69,8 +71,19 @@
 
         <!-- SKILLS SECTION -->
         <section id="skills" class="skills section">
-            <h2 class="section-title">Tech <span>Stack</span></h2>
+            <h2 class="section-title">Tech <span>Stack & Expertise</span></h2>
             <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-chart-line skill-icon" style="color:#00F0FF;"></i>
+                    <h3>Algorithmic Trading & Quants</h3>
+                    <div class="tech-badges">
+                        <span class="badge">TradingView / Pine Script</span>
+                        <span class="badge">MetaTrader 5 (MQL5)</span>
+                        <span class="badge">Solana / DEX Sniping</span>
+                        <span class="badge">Monte Carlo Modeling</span>
+                        <span class="badge">FTMO Risk Engines</span>
+                    </div>
+                </div>
                 <div class="skill-card">
                     <i class="fab fa-python skill-icon"></i>
                     <h3>Data Science & ML</h3>
@@ -89,7 +102,7 @@
                         <span class="badge">AI Agents</span>
                         <span class="badge">RAG</span>
                         <span class="badge">LangChain</span>
-                        <span class="badge">Prompt Loops</span>
+                        <span class="badge">Self-Correcting Loops</span>
                         <span class="badge">Claude / GPT APIs</span>
                     </div>
                 </div>
@@ -101,18 +114,7 @@
                         <span class="badge">SQLite</span>
                         <span class="badge">Vector DBs</span>
                         <span class="badge">Chroma</span>
-                        <span class="badge">Web Scraping</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cogs skill-icon"></i>
-                    <h3>MLOps & Automation</h3>
-                    <div class="tech-badges">
-                        <span class="badge">GitHub Actions</span>
-                        <span class="badge">CI/CD</span>
-                        <span class="badge">Docker</span>
-                        <span class="badge">REST APIs</span>
-                        <span class="badge">Serverless</span>
+                        <span class="badge">WebSockets & Streams</span>
                     </div>
                 </div>
             </div>
@@ -154,7 +156,49 @@
             <h2 class="section-title">Featured <span>Projects</span></h2>
             <div class="projects-grid">
                 
-                <!-- Project 1: Find The Insiders -->
+                <!-- Project 0: DarkAIs Algo Trading Academy (FLAGSHIP) -->
+                <a href="https://karidasd.github.io/algo-trading-academy/" target="_blank" class="project-card" style="border-color: rgba(0, 240, 255, 0.4); box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-graduation-cap folder-icon" style="color:#00F0FF;"></i>
+                            <div class="project-links">
+                                <span class="live-indicator live"><span class="dot-blink green"></span> Live Academy</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </div>
+                        <h3 class="project-title" style="color:#00F0FF;">DarkAIs Algo Trading Academy</h3>
+                        <p class="project-desc">Institutional educational platform with 12 interactive modules, in-lesson Botaki simulators, Visual Pine Script v5 generator, 500-universe Monte Carlo engine, and FTMO risk calculators.</p>
+                        <ul class="project-tech-list">
+                            <li>Pine Script v5</li>
+                            <li>TradingView</li>
+                            <li>Monte Carlo</li>
+                            <li>Prop Firm / FTMO</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Project 1: Solana Sniper Bot -->
+                <a href="https://github.com/karidasd/solana-sniper-bot" target="_blank" class="project-card" style="border-color: rgba(168, 85, 247, 0.4);">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-bolt folder-icon" style="color:#C084FC;"></i>
+                            <div class="project-links">
+                                <span class="live-indicator"><span class="dot-blink"></span> Code</span>
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </div>
+                        <h3 class="project-title" style="color:#C084FC;">solana-sniper-bot</h3>
+                        <p class="project-desc">Ultra low-latency Raydium memecoin sniper utilizing Jito MEV bundles, honeypot safety checks, mint-revocation validators, and automatic profit locks.</p>
+                        <ul class="project-tech-list">
+                            <li>Solana RPC</li>
+                            <li>Jito MEV</li>
+                            <li>Raydium SDK</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <!-- Project 2: Find The Insiders -->
                 <a href="https://github.com/karidasd/find-the-insiders" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-header">
@@ -175,7 +219,7 @@
                     </div>
                 </a>
 
-                <!-- Project 2: Prompt-to-Loop -->
+                <!-- Project 3: Prompt-to-Loop -->
                 <a href="https://github.com/karidasd/prompt-to-loop-engineering" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-header">
@@ -196,7 +240,7 @@
                     </div>
                 </a>
 
-                <!-- Project 3: Over-Under Predictions -->
+                <!-- Project 4: Over-Under Predictions -->
                 <a href="https://github.com/karidasd/over-under-predictions" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-header">
@@ -217,49 +261,7 @@
                     </div>
                 </a>
 
-                <!-- Project 4: Remote Work Tools 2026 -->
-                <a href="https://github.com/karidasd/remote-work-tools-2026" target="_blank" class="project-card">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <i class="far fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <span class="live-indicator live"><span class="dot-blink green"></span> Live</span>
-                                <i class="fab fa-github"></i>
-                            </div>
-                        </div>
-                        <h3 class="project-title">remote-work-tools-2026</h3>
-                        <p class="project-desc">A brutal, opinionated analysis of how 19 remote work tools (Slack, Zoom, Figma, etc.) have been completely transformed by AI in 2026.</p>
-                        <ul class="project-tech-list">
-                            <li>AI Tools</li>
-                            <li>State of Stack</li>
-                            <li>Web Dashboard</li>
-                            <li>Markdown</li>
-                        </ul>
-                    </div>
-                </a>
-
-                <!-- Project 5: Technical Debt Analyzer -->
-                <a href="https://github.com/karidasd/technical-debt-analyzer" target="_blank" class="project-card">
-                    <div class="project-content">
-                        <div class="project-header">
-                            <i class="far fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <span class="live-indicator"><span class="dot-blink"></span> CLI</span>
-                                <i class="fab fa-github"></i>
-                            </div>
-                        </div>
-                        <h3 class="project-title">technical-debt-analyzer</h3>
-                        <p class="project-desc">CLI tool analyzing codebase complexity, cognitive load, and duplication to estimate and track technical debt using AST parsing.</p>
-                        <ul class="project-tech-list">
-                            <li>Python</li>
-                            <li>AST Parsing</li>
-                            <li>Code Metrics</li>
-                            <li>Static Analysis</li>
-                        </ul>
-                    </div>
-                </a>
-
-                <!-- Project 6: Agentic-BI -->
+                <!-- Project 5: Agentic-BI -->
                 <a href="https://github.com/karidasd/Agentic-BI" target="_blank" class="project-card">
                     <div class="project-content">
                         <div class="project-header">
@@ -284,8 +286,8 @@
         <!-- CONTACT SECTION -->
         <section id="contact" class="contact section">
             <h2 class="section-title">Get In <span>Touch</span></h2>
-            <p>I'm currently focused on agentic AI workflows and open-source projects, but my inbox is always open. Whether you have a question, want to discuss a project, or schedule an interview, feel free to reach out or book a call directly!</p>
-            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 20px;">
+            <p>I'm currently focused on algorithmic trading systems, agentic AI workflows, and quantitative research. Whether you have a question, want to discuss a project, or collaborate, feel free to reach out or book a call directly!</p>
+            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
                 <a href="mailto:karidasdimitris23@gmail.com" class="btn btn-primary">Say Hello</a>
                 <a href="https://calendly.com/karidasdimitris23" target="_blank" class="btn btn-secondary" style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-calendar-alt"></i> Schedule a Call</a>
             </div>
@@ -297,7 +299,7 @@
             <a href="https://github.com/karidasd" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/dimitris-karydas-04638362/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <p>Designed & Built by Karydas</p>
+        <p>Designed & Built by Karydas Dimitris • DarkAIs Systems</p>
     </footer>
 
     <script src="script.js"></script>

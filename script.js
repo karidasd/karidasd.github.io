@@ -3,14 +3,15 @@ const typedTextSpan = document.getElementById("typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = [
+    "Algorithmic Trading & Quant Dev.",
     "AI Agent Architect.",
-    "Data Scientist.",
+    "Data Scientist & Researcher.",
     "PhD Candidate & Instructor.",
     "Machine Learning Engineer."
 ];
-const typingDelay = 100;
-const erasingDelay = 50;
-const newTextDelay = 2000; // Delay between current and next text
+const typingDelay = 90;
+const erasingDelay = 45;
+const newTextDelay = 1800;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -42,7 +43,7 @@ function erase() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+document.addEventListener("DOMContentLoaded", function() {
     if(textArray.length) setTimeout(type, newTextDelay + 250);
     runTerminalAnimation();
     loadGitHubStats();
@@ -52,9 +53,10 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });
 
@@ -64,18 +66,16 @@ async function runTerminalAnimation() {
     if (!term) return;
 
     const lines = [
-        { text: "python run_agent.py", delay: 1000, type: true, prompt: true },
-        { text: "[INFO] Initializing DarkAIs Orchestrator...", delay: 800, type: false, colorClass: "t-blue" },
-        { text: "[INFO] Memory patterns loaded.", delay: 600, type: false, colorClass: "t-blue" },
-        { text: "[AGENTS] Spawning Researcher, Critic, Writer...", delay: 1000, type: false, colorClass: "t-yellow" },
-        { text: "[RESEARCHER] Scanning repositories...", delay: 900, type: false },
-        { text: "[RESEARCHER] Found prompt-to-loop-engineering (7 levels)", delay: 300, type: false },
-        { text: "[RESEARCHER] Found over-under-predictions (Poisson engine)", delay: 300, type: false },
-        { text: "[CRITIC] Verifying models & logs...", delay: 800, type: false, colorClass: "t-yellow" },
-        { text: "[SUCCESS] Agent Loop stabilized. Ready.", delay: 500, type: false, colorClass: "t-green" }
+        { text: "python run_orchestrator.py", delay: 900, type: true, prompt: true },
+        { text: "[INFO] Initializing DarkAIs Quant & AI Systems...", delay: 700, type: false, colorClass: "t-blue" },
+        { text: "[INFO] Connecting to Solana RPC & Broker WebSockets...", delay: 600, type: false, colorClass: "t-blue" },
+        { text: "[AGENTS] Spawning Algo Academy, Solana Sniper, Agentic-BI...", delay: 800, type: false, colorClass: "t-yellow" },
+        { text: "[ACADEMY] 12 Interactive Modules & Botakis online...", delay: 350, type: false },
+        { text: "[SNIPER] Jito MEV Bundles & Anti-Rug engine primed...", delay: 350, type: false },
+        { text: "[SUCCESS] All systems operational. Ready.", delay: 500, type: false, colorClass: "t-green" }
     ];
 
-    term.innerHTML = ""; // Clear static content
+    term.innerHTML = "";
 
     for (let line of lines) {
         if (line.prompt) {
@@ -83,23 +83,20 @@ async function runTerminalAnimation() {
         }
         
         if (line.type) {
-            // Type character by character
             const span = document.createElement("span");
             term.appendChild(span);
             for (let i = 0; i < line.text.length; i++) {
                 span.textContent += line.text.charAt(i);
-                await new Promise(r => setTimeout(r, 60));
+                await new Promise(r => setTimeout(r, 50));
             }
             term.innerHTML += "<br>";
         } else {
-            // Instant print
             const colorClass = line.colorClass ? ` class="${line.colorClass}"` : "";
             term.innerHTML += `<span${colorClass}>${line.text}</span><br>`;
         }
         await new Promise(r => setTimeout(r, line.delay));
     }
     
-    // Final prompt
     term.innerHTML += `<span class="t-green">visitor@darkais:~$</span> <span class="blink-cursor">_</span>`;
 }
 
@@ -110,21 +107,18 @@ async function loadGitHubStats() {
     const starsEl = document.getElementById("github-stars");
     const feedEl = document.getElementById("activity-feed");
 
-    // Fallbacks
-    const fallbackStats = { repos: "45", followers: "18", stars: "32" };
+    const fallbackStats = { repos: "46", followers: "20", stars: "38" };
     const fallbackActivity = [
-        { repo: "prompt-to-loop-engineering", desc: "Push to main: switch to English as primary language", time: "2h ago" },
-        { repo: "remote-work-tools-2026", desc: "Add Free Tools section — 20 tools listed", time: "4h ago" },
-        { repo: "over-under-predictions", desc: "Release update: fix Over/Under odds display in UI", time: "1d ago" }
+        { repo: "algo-trading-academy", desc: "Deploy Grand Finale: Solana Sniper, Journal & Confluence", time: "Just now" },
+        { repo: "solana-sniper-bot", desc: "Release update: Jito MEV and Anti-Rug filter optimization", time: "1h ago" },
+        { repo: "prompt-to-loop-engineering", desc: "Push to main: 7-level agentic self-correction loop", time: "1d ago" }
     ];
 
     try {
-        // Fetch User Info
         const userRes = await fetch("https://api.github.com/users/karidasd");
         if (!userRes.ok) throw new Error();
         const userData = await userRes.json();
         
-        // Fetch Repos to sum stars
         const reposRes = await fetch("https://api.github.com/users/karidasd/repos?per_page=100");
         let totalStars = 0;
         if (reposRes.ok) {
@@ -132,7 +126,6 @@ async function loadGitHubStats() {
             totalStars = reposData.reduce((acc, repo) => acc + repo.stargazers_count, 0);
         }
 
-        // Fetch Events for activity feed
         const eventsRes = await fetch("https://api.github.com/users/karidasd/events/public");
         let activityHtml = "";
         
@@ -156,7 +149,6 @@ async function loadGitHubStats() {
             }
         }
 
-        // Render values
         reposEl.textContent = userData.public_repos || fallbackStats.repos;
         followersEl.textContent = userData.followers || fallbackStats.followers;
         starsEl.textContent = totalStars || fallbackStats.stars;
@@ -168,7 +160,6 @@ async function loadGitHubStats() {
         }
 
     } catch (e) {
-        // Render fallback on error / rate limit
         reposEl.textContent = fallbackStats.repos;
         followersEl.textContent = fallbackStats.followers;
         starsEl.textContent = fallbackStats.stars;
